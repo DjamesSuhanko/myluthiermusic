@@ -15,5 +15,5 @@ class Check(HTMLParser):
             assert target.is_file(),(self.path,value)
 for path in ROOT.rglob('*.html'):
     parser=Check(path);parser.feed(path.read_text());assert parser.headings==1,path
-assert (ROOT/'CNAME').read_text().strip()=='myluthier.clavesol.com.br'
+assert (ROOT/'CNAME').read_text().strip()=='mylut.clavesol.com.br'
 print('Páginas, recursos e links locais verificados.')

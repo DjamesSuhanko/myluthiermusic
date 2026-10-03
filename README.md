@@ -1,6 +1,6 @@
 # MyLuthier · páginas públicas Clave Sol
 
-Site independente do código do aplicativo, preparado para **myluthier.clavesol.com.br**. A identidade utiliza o fundo claro, verde, dourado, DM Sans, Playfair Display e a marca do Clave Sol. O logo do MyLuthier é o PNG fornecido pelo proprietário, mantido sem alterações.
+Site independente do código do aplicativo, preparado para **mylut.clavesol.com.br**. A identidade utiliza o fundo claro, verde, dourado, DM Sans, Playfair Display e a marca do Clave Sol. O logo do MyLuthier é o PNG fornecido pelo proprietário, mantido sem alterações.
 
 ## Conteúdo
 
@@ -22,10 +22,10 @@ python3 -m http.server 8080 --directory dist
 
 Abra http://localhost:8080. Não publique a raiz do repositório; publique somente `dist/`.
 
-## Publicação futura
+## Publicação
 
-O arquivo `CNAME` já contém `myluthier.clavesol.com.br`. Os arquivos estáticos prontos para hospedagem estão em `dist/`. O proprietário ainda criará o subdomínio e configurará o domínio customizado nas opções do Pages. A preparação local não altera DNS, não habilita Pages e não publica nada por conta própria.
+O arquivo `CNAME` já contém `mylut.clavesol.com.br`. Os arquivos estáticos prontos para hospedagem estão em `dist/`. O GitHub Pages usa GitHub Actions e o domínio customizado `mylut.clavesol.com.br`. O workflow **Publicar MyLuthier** gera e verifica o site e publica somente `dist/` a cada push em `main`. Também pode ser iniciado manualmente na aba Actions. O DNS deve apontar para o GitHub Pages.
 
 Quando o conteúdo do index chegar, substituir `content/index.html`, atualizar a descrição correspondente em `build.py` e retirar apenas o `noindex` da página inicial. As páginas de privacidade e contato permanecem disponíveis separadamente. Nenhum link de loja ou alegação promocional provisória foi inventado.
 
-URL prevista para o Play Console, depois de o site estar publicado: https://myluthier.clavesol.com.br/privacidade/
+URL prevista para o Play Console, depois de o site estar publicado: https://mylut.clavesol.com.br/privacidade/
