@@ -34,3 +34,5 @@ URL prevista para o Play Console, depois de o site estar publicado: https://mylu
 ## Editar conteúdo
 
 Consulte [EDITAR-CONTEUDO.md](EDITAR-CONTEUDO.md). Apresentação, política e contato são editados em Markdown, dentro de `content/`.
+
+Para escrever a descrição completa do aplicativo, edite **`content/apresentacao.md`**. O conteúdo aparece entre o topo e os blocos de privacidade/contato, sem alterar essas áreas.

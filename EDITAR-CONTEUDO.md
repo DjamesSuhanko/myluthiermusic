@@ -2,32 +2,35 @@
 
 Edite os arquivos da pasta `content/`:
 
-- `index.md`: apresentação, capa e blocos da página inicial.
+- `apresentacao.md`: texto descritivo livre sobre o aplicativo.
+- `index.md`: nome, frase curta, capa e blocos de privacidade e contato existentes.
 - `privacy.md`: política de privacidade.
 - `contact.md`: contato.
 
 Não edite `dist/`: ela é recriada pelo build. Os templates HTML cuidam somente da apresentação visual.
 
-## Página inicial
+## Onde escrever sobre o aplicativo
 
-O início de `index.md` contém três campos, seguidos de uma linha vazia:
+Abra **`content/apresentacao.md`**. Escreva apenas Markdown, sem cabeçalho de configuração:
 
 ```markdown
-Title: Nome do aplicativo
-Description: Uma descrição curta do aplicativo.
-Image: nome-da-capa.webp
+## Conheça o aplicativo
 
-Um parágrafo opcional sobre o app.
+Aqui você escreve a apresentação, com quantos parágrafos precisar.
 
-## Recursos
+### Recursos
 
 - Primeiro recurso.
 - Segundo recurso.
 
-[Conhecer mais](https://exemplo.com/)
+![Tela do aplicativo]({{BASE}}/assets/minha-imagem.webp)
 ```
 
-`Image` é o nome/caminho dentro de `assets/`. Cada seção iniciada por `##` vira um bloco da apresentação. Não use `#` no corpo da página inicial: o título principal vem de `Title`.
+O texto aparece em uma região própria **abaixo do topo com o nome, a capa e os botões**, e **acima de “Seus dados no aplicativo” e “Fale com o desenvolvedor”**. Títulos e parágrafos permanecem juntos como um artigo; não viram cards. O restante da página permanece intacto. Se o arquivo estiver vazio ou contiver somente comentários, essa região não aparece.
+
+## Configuração do topo
+
+`content/index.md` mantém `Title`, `Description` e `Image`. `Description` é apenas a frase curta abaixo do nome do app. O corpo desse arquivo mantém os blocos de privacidade e contato; não precisa ser alterado para escrever a apresentação.
 
 ## Formatação e imagens
 
